@@ -1,0 +1,14 @@
+Pod: Basic Unit of deployment in k8s
+kubectl get all
+Pods
+    kubectl describe pod webapp
+    kubectl exec -it webapp sh
+    wget http://localhost:80/
+    kubectl apply -f first-pod.yaml
+    kubectl get po --show-labels
+    kubectl get po --show-labels -l release=0 // with a slector
+Services
+    minikube service fleetman-webapp  --url
+    selection of 2nd Pod without any downtime using labels
+Replicaset
+    
