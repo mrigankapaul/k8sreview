@@ -44,3 +44,10 @@ Kibana
     Visualization
     Dashboard
 
+Ingress
+    minikube addons list
+    minikube addons enable ingress
+    kubectl get ingress
+    kubectl decribe ingress
+
+
