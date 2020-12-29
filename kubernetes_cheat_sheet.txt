@@ -13,4 +13,12 @@ Services
     selection of 2nd Pod without any downtime using labels
 Replicaset
     kubectl describe rs webapp
-
+Deployments
+    Rolling updated with zero downtime
+    kubectl rollout status deployment/webapp
+    kubectl rollout history deployment/webapp
+    kubectl rollout undo deploy/webapp --to-revision=2
+NameSpaces
+    kubectl get ns
+Networking and Service Discovery
+    nslookup database
