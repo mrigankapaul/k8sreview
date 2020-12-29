@@ -49,5 +49,9 @@ Ingress
     minikube addons enable ingress
     kubectl get ingress
     kubectl decribe ingress
-
+Resource Requests
+    kubectl get nodes
+    kubectl describe node minikube
+    Memory limit - If the actual memory usage of the container at runtime exceeds the limit, the container will be killed. But the pod will remain to restart the container.
+    CPU limit - If the actual cpu exec limit, the CPU will be clamped or throttled.
 
