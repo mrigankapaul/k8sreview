@@ -8,6 +8,7 @@ Pods
     kubectl get po --show-labels
     kubectl get po --show-labels -l release=0 // with a slector
     kubectl delete po --all // deleting all pods
+    kubectl get pods -o wide
 Services
     minikube service fleetman-webapp  --url
     selection of 2nd Pod without any downtime using labels
@@ -38,4 +39,8 @@ kops
     kops edit ig nodes
     kops get ig --name {NAME}
     storage class configuration 
+Kibana 
+    Save Search
+    Visualization
+    Dashboard
 
