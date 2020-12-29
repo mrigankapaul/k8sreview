@@ -28,3 +28,14 @@ Persistence
     Pod (Volume)-> Claim -> Persistence Volume
     kubectl get pv -> status = Bound when it actually works may take some time
     kubectl get pvc -> status = Bound when it actually works
+kops
+    export NAME=fleetman.k8s.local
+    export KOPS_STATE_STORE=s3://state-storage-mp
+    aws ec2 describe-availability-zones --region ca-central-1
+    kops create secret --name ${NAME} sshpublickey admin -i ~/.ssh/id_rsa.pub
+    kops create cluster --zones ca-central-1a,ca-central-1b,ca-central-1d ${NAME}
+    kops edit cluster ${NAME}
+    kops edit ig nodes
+    kops get ig --name {NAME}
+    storage class configuration 
+
