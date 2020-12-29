@@ -21,4 +21,10 @@ Deployments
 NameSpaces
     kubectl get ns
 Networking and Service Discovery
+    cat /etc/resolv.conf
+    apk pm can be used inside alpine sh
     nslookup database
+Persistence
+    Pod (Volume)-> Claim -> Persistence Volume
+    kubectl get pv -> status = Bound when it actually works may take some time
+    kubectl get pvc -> status = Bound when it actually works
