@@ -58,5 +58,15 @@ HPA
     Rule - If CPU usage > 50% cpu request - AutoScale to upto 5 pods
     kubectl top pod
     kubectl addons add metrics-server
+    kubectl autoscale deployment api-gateway --cpu-percent=50 --min=1 --max=10
+liveness and readiness probe
+    especially when you have hpa
+Pending Topics
+    Quality of Service Eviction
+    RBAC on k8s
+    Metrics Profiling
+    Monitoring with prometheus and grafana
+    Alert Manager
+    
 
 
